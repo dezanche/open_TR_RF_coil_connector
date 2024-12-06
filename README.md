@@ -8,22 +8,12 @@ This design is the first of the [OpenConnectors](https://github.com/dezanche/Ope
 The connector consists of a system-side and coil-side housing which are designed to mate. Each housing is made of off-the-shelf and 3D-printed parts that enclose and support the printed circuit boards (PCBs) which contain the electrical contacts.
 
 ### Connector Housing
-System-side and coil-side housing parts are defined in the [FreeCAD](https://www.freecad.org/) [file](housings/connector_full_3D_model.FCStd) which contains the full 3D model of the connector. Individual parts can be exported in various formats for fabrication. The [bill of materials](housings/TR_RF_coil_connector_full_3D_BOM.md) lists off-the-shelf and other parts required to build the connector.
+System-side and coil-side housing parts are defined in the [FreeCAD file](housings/connector_full_3D_model.FCStd) which contains the full 3D model of the connector. Individual parts can be exported from [FreeCAD](https://www.freecad.org/) to various formats for fabrication. The [bill of materials](housings/TR_RF_coil_connector_full_3D_BOM.md) lists off-the-shelf and other parts required to build the connector.
 
-A project may contain more than one housing. Therefore, each housing has to be associated to a unique identifier which is used in all the filenames relevant to that housing. The string \<coil-side> or \<system-side> has to be added after the identifier in the filename to distinguish the coil-side or system-side housing component, respectively. In case the system-side housing is designed to contemporarely host more than one coil-side connection (e.g., two different RF coil for TX and RX), another identifier (e.g., \<TX>, \<RX>) has to be added before the \<coil-side> string in the filename. As an example, a housing identified as *housing1* designed for an MR system which accept different TX and RX RF coil, can be made of files whose names are:
-- `housing1_system-side*.*`
-- `housing1_TX_coil-side*.*`
-- `housing1_RX_coil-side*.*`
-
-In case the housing is designed for a system operating with only one RF Coil for TX and RX, the filenames would be:
-- `housing1_system-side*.*`
-- `housing1_coil-side*.*`
-
-In general, all the components associated with the same housing identifier are supposed to be mated together.
-All the file relevant to the housing have to be collected inside the "housings" folder. A bill of materials (BOM) file has to be created for each housing according to the template provided in the "housings" folder. The BOM text filename should report the relevant housing identifier. 3D-CAD models can be provided with any software of choice but an OpenSource software is always preferable (e.g., [FreeCAD](https://www.freecad.org/)). Despite of the 3D-CAD software used to design the housing of the connector, each part of the housing has to be designed to be effectively printed with standard FDM printers. Therefore, *stl* files have to be provided since they are the most common file format accepted by 3D printer software. These files have to be collected in the "exported" sub-folder and have to be named with the same convention described above.
+Therefore, *stl* files have to be provided since they are the most common file format accepted by 3D printer software. These files have to be collected in the "exported" sub-folder and have to be named with the same convention described above.
 
 ### Connector Boards
-KiCAD files TBD
+[KiCAD](https://www.kicad.org/) files of the PCBs will be provided in the [boards](boards/) directory.
 
 ### Mating Tables
 Despite the minimum requirement of one coil-side and system-side board per housing, more boards can be designed for each housing. As a consequence, each system-side board might mate only with some of the coil-side boards and viceversa. *Mating Tables* allow to immediatly retrive this information and should be reported for each housing in a dedicated Markdown file named "MatingTables.md". An example is provided in the relevant file available with this Template Repository

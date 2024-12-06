@@ -1,5 +1,5 @@
-# OpenConnectors Template
-This is the *Template Repository* of the OpenConnectors collection. It can be used to generate new repositories compliant with the structure required by the OpenConnectors project (see [GitHub Templates](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)).
+# Transmit/Receive RF Coil Connector
+This design is the first of the OpenConnectors collection. It is intended for use with MRI radio frequency coils that operate in transmit/receive mode and supports a maximum of 2 coaxial connections.
 
 ## Project Structure
 Each connector is made of a system-side and coil-side components. Each component is made of a housing and a board which are designed to mate with the housing and board of the other component.

@@ -13,7 +13,10 @@ System-side and coil-side housing parts are defined in the [FreeCAD file](housin
 Each official release will include *stl* files (common file format accepted by 3D printer software) in the [exported](exported/) sub-folder.
 
 ### Connector Boards
-[KiCAD](https://www.kicad.org/) files of the PCBs will be provided in the [boards](boards/) directory.
+[KiCAD 9.0](https://www.kicad.org/) files of the PCBs are provided in the [boards](boards/) directory.
+- `coil-side_PCB.*`: base plate on which the coil-side coax contacts and the edge card are attached
+- `edge-card_PCB.*`: provides the DC contacts that mate with the edge connector on the scanner-side PCB
+- `scanner-side_PCB.*`: base plate on which the scanner-side coax contacts and edge connector are attached
 
 ## Contributors
 

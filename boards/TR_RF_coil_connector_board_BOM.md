@@ -8,4 +8,4 @@
 | 2 | - | Aliexpress, others | SMA (F) to BNC (F) adapter, flanged <br /> OR <br /> Coax to BNC (F) connector, flanged
 | 1 | PCIE-036-02-F-D-TH | Samtec | PCI Card Edge Connector
 
-**ESTIMATED COST: $xxx USD**
+**ESTIMATED COST: $15 USD**

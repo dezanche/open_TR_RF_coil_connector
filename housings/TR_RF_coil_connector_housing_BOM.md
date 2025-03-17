@@ -5,4 +5,4 @@
 | xx | - | Various | M2 and M3 Nylon or stainless screws
 | 1 | 53111710 | Lapp Kabel | Cable strain relief
 
-**ESTIMATED COST: $xxx USD**
+**ESTIMATED COST: $5 USD**

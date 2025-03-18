@@ -8,12 +8,12 @@ This design is the first of the [OpenConnectors](https://github.com/dezanche/Ope
 The connector consists of a system-side and coil-side housing which are designed to mate. Each housing is made of off-the-shelf and 3D-printed parts that enclose and support the printed circuit boards (PCBs) which contain the electrical contacts.
 
 ### Connector Housing
-System-side and coil-side housing parts are defined in the [FreeCAD file](housings/connector_full_3D_model.FCStd) which contains the full 3D model of the connector. Individual parts can be exported from [FreeCAD](https://www.freecad.org/) to various formats for fabrication. The [bill of materials](housings/TR_RF_coil_connector_full_3D_BOM.md) lists off-the-shelf and other parts required to build the connector.
+System-side and coil-side housing parts are defined in the [FreeCAD file](housings/connector_full_3D_model.FCStd) which contains the full 3D model of the connector. Individual parts can be exported from [FreeCAD](https://www.freecad.org/) to various formats for fabrication. The [bill of materials](housings/TR_RF_coil_connector_housing_BOM.md) lists off-the-shelf and other parts required to build the connector.
 
 Each official release will include *stl* files (common file format accepted by 3D printer software) in the [exported](exported/) sub-folder.
 
 ### Connector Boards
-[KiCAD 9.0](https://www.kicad.org/) files of the PCBs are provided in the [boards](boards/) directory.
+[KiCAD 9.0](https://www.kicad.org/) files of the PCBs are provided in the [boards](boards/) directory, including a corresponding [bill of materials](boards/TR_RF_coil_connector_board_BOM.md).
 - `coil-side_PCB.*`: base plate on which the coil-side coax contacts and the edge card are attached
 - `edge-card_PCB.*`: provides the DC contacts that mate with the edge connector on the scanner-side PCB
 - `scanner-side_PCB.*`: base plate on which the scanner-side coax contacts and edge connector are attached
